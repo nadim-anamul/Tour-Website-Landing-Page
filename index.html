@@ -70,9 +70,12 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="nature" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="nature" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="nature" class="composition__photo composition__photo--p3">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 100w" sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" src="img/nat-1-large.jpg" alt="nature" class="composition__photo composition__photo--p1">
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 100w" sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" src="img/nat-2-large.jpg" alt="nature" class="composition__photo composition__photo--p2">
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 100w" sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 300px" src="img/nat-3-large.jpg" alt="nature" class="composition__photo composition__photo--p3">
+
+                        
                     </div>
                 </div>
             </div>
@@ -306,7 +309,11 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img class="footer__logo" src="img/logo-green-2x.png" alt="full logo">
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                    <img class="footer__logo" srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="full logo">
+            </picture>
+            
         </div>
         <div  class="row">
             <div class="col-1-of-2">
@@ -344,82 +351,7 @@
             </div>
         </div>
     </div>
-    <!-- <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 Of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 Of 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 Of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 Of 3
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 Of 4
-                </div>
-                
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 Of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 Of 4
-                </div>
-                
-            </div>
-        </section> -->
+    
 
 </body>
 
